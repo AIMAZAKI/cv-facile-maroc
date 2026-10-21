@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Créez gratuitement un CV professionnel en français ou en arabe. Modèles modernes, aperçu instantané et téléchargement en PDF.">
+<meta name="theme-color" content="#0f766e">
+<title>CV Facile Maroc — Créez votre CV gratuitement</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">CV</span><span>CV Facile <b>Maroc</b></span></a><nav><a href="#outil">Créer un CV</a><a href="#etapes">Comment ça marche</a><a href="#conseils">Conseils</a></nav><button class="menu-btn" aria-label="Ouvrir le menu">☰</button></header>
+<main>
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow">OUTIL GRATUIT · SANS INSCRIPTION</span><h1>Votre prochain emploi commence par un <em>bon CV.</em></h1><p>Créez un CV clair et professionnel en quelques minutes. Remplissez le formulaire, visualisez le résultat et téléchargez-le en PDF.</p><div class="hero-actions"><a class="btn primary" href="#outil">Créer mon CV gratuitement <span>→</span></a><span class="trust">✓ Gratuit · ✓ Simple · ✓ Dans votre navigateur</span></div></div>
+<div class="hero-art"><img src="assets/cv-illustration.svg" alt="Illustration d'un CV professionnel sur un bureau" width="560" height="430"></div>
+</section>
+<div class="ad-slot" aria-label="Espace publicitaire"><span>ESPACE PUBLICITAIRE</span><small>Les annonces pourront apparaître ici après approbation publicitaire.</small></div>
+<section class="section" id="outil"><div class="section-heading"><span class="eyebrow">GÉNÉRATEUR DE CV</span><h2>Créez votre CV</h2><p>Les informations restent sur votre appareil. Les champs marqués d’un * sont recommandés.</p></div>
+<div class="builder">
+<form id="cvForm" class="form-panel">
+<div class="form-section"><h3>01 / Informations personnelles</h3><div class="field-grid">
+<label>Nom complet *<input name="name" required maxlength="80" placeholder="Ex. Sara El Amrani"></label>
+<label>Poste recherché<input name="job" maxlength="80" placeholder="Ex. Assistante administrative"></label>
+<label>Email<input name="email" type="email" maxlength="100" placeholder="sara@email.com"></label>
+<label>Téléphone<input name="phone" maxlength="40" placeholder="+212 6..."></label>
+<label>Ville<input name="city" maxlength="80" placeholder="Béni Mellal"></label>
+<label>LinkedIn / Portfolio<input name="link" maxlength="150" placeholder="linkedin.com/in/..."></label>
+<label class="photo-upload">Photo du CV (facultatif)<input id="photoInput" name="photo" type="file" accept="image/jpeg,image/png,image/webp"><small>JPG, PNG ou WebP — 2 Mo maximum.</small></label>
+</div></div>
+<div class="form-section"><h3>02 / Profil professionnel</h3><label>Résumé<textarea name="summary" rows="3" maxlength="700" placeholder="Présentez votre expérience, vos points forts et votre objectif..."></textarea></label></div>
+<div class="form-section"><h3>03 / Expérience</h3><label>Expériences professionnelles<textarea name="experience" rows="5" maxlength="1800" placeholder="Poste — Entreprise — Dates&#10;• Responsabilité ou résultat&#10;• Responsabilité ou résultat"></textarea></label><p class="hint">Mettez une expérience par bloc, en séparant les blocs par une ligne vide.</p></div>
+<div class="form-section"><h3>04 / Formation</h3><label>Diplômes et études<textarea name="education" rows="4" maxlength="1200" placeholder="Diplôme — Établissement — Année"></textarea></label></div>
+<div class="form-section"><h3>05 / Compétences</h3><label>Compétences (séparées par des virgules)<textarea name="skills" rows="2" maxlength="500" placeholder="Excel, communication, gestion du temps..."></textarea></label><label>Langues<textarea name="languages" rows="2" maxlength="400" placeholder="Arabe : langue maternelle, Français : intermédiaire..."></textarea></label></div>
+<div class="form-actions"><button class="btn primary" type="submit">Actualiser l’aperçu</button><button class="btn secondary" type="button" id="clearBtn">Effacer le formulaire</button></div>
+<p class="privacy">🔒 Vos données sont traitées localement dans votre navigateur. Elles ne sont pas envoyées à notre serveur.</p>
+</form>
+<aside class="preview-panel"><div class="preview-top"><div><span class="eyebrow">APERÇU EN DIRECT</span><h3>Votre CV</h3></div><button class="btn download" id="downloadBtn" type="button">Télécharger PDF ↓</button></div>
+<article id="cvPreview" class="cv-paper" aria-live="polite"><header class="cv-head"><img id="pPhoto" class="cv-photo" alt="Photo de profil" hidden><div class="cv-head-text"><h1 id="pName">Votre nom complet</h1><p id="pJob">Poste recherché</p><div id="pContact" class="cv-contact">Email · Téléphone · Ville</div></div></header><section class="cv-block"><h2>PROFIL</h2><p id="pSummary">Votre résumé professionnel apparaîtra ici. Décrivez en quelques lignes votre expérience, vos qualités et votre objectif.</p></section><section class="cv-block"><h2>EXPÉRIENCE</h2><div id="pExperience" class="cv-lines">Ajoutez vos expériences professionnelles dans le formulaire.</div></section><section class="cv-block"><h2>FORMATION</h2><div id="pEducation" class="cv-lines">Ajoutez vos diplômes et formations.</div></section><section class="cv-block"><h2>COMPÉTENCES</h2><div id="pSkills" class="skill-tags"><span>Vos compétences</span></div></section><section class="cv-block"><h2>LANGUES</h2><p id="pLanguages">Ajoutez vos langues.</p></section></article>
+<p class="hint">Astuce : utilisez des phrases courtes et adaptez le CV à chaque offre.</p></aside>
+</div></section>
+<section class="section steps" id="etapes"><div class="section-heading"><span class="eyebrow">SIMPLE ET RAPIDE</span><h2>Un CV en 3 étapes</h2></div><div class="step-grid"><article><span>01</span><h3>Ajoutez vos informations</h3><p>Remplissez les champs utiles. Pas besoin de créer un compte.</p></article><article><span>02</span><h3>Vérifiez l’aperçu</h3><p>Le CV se met à jour automatiquement pendant que vous écrivez.</p></article><article><span>03</span><h3>Téléchargez en PDF</h3><p>Enregistrez votre CV et vérifiez le rendu avant de l’envoyer.</p></article></div></section>
+<div class="ad-slot" aria-label="Espace publicitaire"><span>ESPACE PUBLICITAIRE</span><small>Un emplacement réservé aux annonces, sans publicité active pour le moment.</small></div>
+<section class="section tips" id="conseils"><div><span class="eyebrow">CONSEILS EMPLOI</span><h2>Un CV efficace, c’est un CV ciblé.</h2><p>Privilégiez les expériences et compétences liées au poste. Relisez l’orthographe, ajoutez des résultats concrets et gardez une mise en page facile à parcourir.</p></div><div class="tip-list"><article><b>01</b><span><strong>Restez précis</strong><small>Utilisez des verbes d’action et des exemples concrets.</small></span></article><article><b>02</b><span><strong>Adaptez votre CV</strong><small>Reprenez les compétences pertinentes de l’offre.</small></span></article><article><b>03</b><span><strong>Vérifiez le PDF</strong><small>Contrôlez les marges, les coordonnées et les dates.</small></span></article></div></section>
+<section class="faq section"><div class="section-heading"><span class="eyebrow">FAQ</span><h2>Questions fréquentes</h2></div><details><summary>Est-ce vraiment gratuit ?</summary><p>Oui. Cet outil de base fonctionne gratuitement dans votre navigateur.</p></details><details><summary>Mes informations sont-elles envoyées sur internet ?</summary><p>Non, le code de cette version construit l’aperçu sur votre appareil. Évitez toutefois d’utiliser un appareil public si vous y saisissez des données personnelles.</p></details><details><summary>Comment le site gagne-t-il de l’argent ?</summary><p>Cette version n’affiche pas de publicité réelle. Après publication, vous pouvez demander l’approbation d’un réseau publicitaire comme Google AdSense. L’acceptation n’est pas garantie et dépend notamment du contenu, de la qualité du site et des règles du réseau.</p></details></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">CV</span><span>CV Facile <b>Maroc</b></span></a><p>Un outil gratuit pour préparer votre prochaine candidature.</p><div><a href="privacy.html">Confidentialité</a><a href="about.html">À propos</a><a href="mailto:contact@example.com">Contact</a></div><small>© <span id="year"></span> CV Facile Maroc. Vérifiez toujours votre CV avant de l’envoyer.</small></footer>
+<script src="script.js"></script>
+</body></html>
